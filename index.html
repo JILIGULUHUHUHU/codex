@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小游戏合集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>小游戏合集</h1>
+      <p class="subtitle">可切换游戏：贪吃蛇 / 俄罗斯方块</p>
+
+      <section class="toolbar">
+        <label for="gameSelect">选择游戏：</label>
+        <select id="gameSelect">
+          <option value="snake">贪吃蛇</option>
+          <option value="tetris">俄罗斯方块</option>
+        </select>
+        <button id="startBtn">开始 / 重新开始</button>
+      </section>
+
+      <section class="scoreboard">
+        <div>分数：<span id="score">0</span></div>
+        <div id="status">按按钮开始游戏</div>
+      </section>
+
+      <canvas id="gameCanvas" width="300" height="500"></canvas>
+
+      <section class="help">
+        <h2>操作说明</h2>
+        <ul>
+          <li><strong>贪吃蛇</strong>：方向键移动。</li>
+          <li><strong>俄罗斯方块</strong>：←→移动，↓加速，↑旋转。</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
