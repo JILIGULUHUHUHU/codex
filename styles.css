@@ -1,0 +1,84 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Roboto, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #1f2a44, #0d1020 65%);
+  color: #f6f7fb;
+}
+
+.app {
+  width: min(92vw, 660px);
+  background: rgba(20, 24, 40, 0.86);
+  border: 1px solid #3b4266;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.35rem 0 1rem;
+  color: #b7c2ff;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+select,
+button {
+  background: #222843;
+  color: #f6f7fb;
+  border: 1px solid #4f5b91;
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+}
+
+button:hover {
+  background: #2a3360;
+  cursor: pointer;
+}
+
+.scoreboard {
+  margin: 0.9rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: #d6dcff;
+}
+
+canvas {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  border: 1px solid #4b578c;
+  border-radius: 10px;
+  background: #0b0f1e;
+  margin: 0 auto;
+}
+
+.help {
+  margin-top: 0.9rem;
+  color: #c8d0fa;
+}
+
+.help h2 {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+.help ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
